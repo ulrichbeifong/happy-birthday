@@ -73,8 +73,8 @@ export default function PhotoCapture({ id }) {
     <section className="section-card photo-section" id={id}>
       <div className="section-heading">
         <div>
-          <h2>Chụp ảnh kỷ niệm</h2>
-          <p>Web sẽ ghép ảnh của bạn vào một chiếc thiệp sinh nhật rồi tải về máy.</p>
+          <h2>Photobooth 📸</h2>
+          <p>Nhớ tải về máy nhaaaaa.</p>
         </div>
       </div>
 
