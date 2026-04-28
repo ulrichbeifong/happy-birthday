@@ -13,5 +13,5 @@ export const birthdayConfig = {
     "Mong rằng hôm nay sẽ là một ngày thật đặc biệt. Hãy ước một điều thật đẹp rồi thổi nến nhé!",
   photoCaption: "Khoảnh khắc sinh nhật đáng nhớ",
   blowThreshold: 0.18,
-  blowHoldMs: 450
+  blowHoldMs: 200
 };
