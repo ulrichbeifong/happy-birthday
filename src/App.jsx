@@ -122,7 +122,7 @@ export default function App() {
         <section className="hero-copy">
           <p className="eyebrow">
             <Sparkles size={18} />
-            Birthday Interactive Web
+            Happy Birthday My Love
           </p>
 
           <TypingGreeting
