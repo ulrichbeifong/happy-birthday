@@ -64,8 +64,8 @@ export default function WishWall() {
     <section className="section-card">
       <div className="section-heading">
         <div>
-          <h2>Bức tường lời chúc</h2>
-          <p>Hãy để lại lời chúc đầu tiên cho Thuffuong nhé.</p>
+          <h2>Galaxy of Wishes ✨</h2>
+          <p>Hãy để lại lời chúc yêu thương cho Thuffuong nhé ❤️</p>
         </div>
       </div>
 
