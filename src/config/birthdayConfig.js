@@ -7,11 +7,11 @@ export const birthdayConfig = {
   secondaryColor: "#ffd166",
   greeting: "Chúc mừng sinh nhật",
   shortWish:
-    "Chúc bạn tuổi mới thật nhiều niềm vui, luôn xinh đẹp, may mắn và hạnh phúc mỗi ngày!",
-  cardTitle: "Một chiếc thiệp nhỏ dành cho bạn",
+    "Chúc cô bé của anh tuổi mới thật nhiều niềm vui, luôn xinh đẹp, may mắn và hạnh phúc mỗi ngày!",
+  cardTitle: "Mở thiệp đi nàoooo",
   cardMessage:
-    "Mong rằng hôm nay sẽ là một ngày thật đặc biệt. Hãy ước một điều thật đẹp rồi thổi nến nhé!",
-  photoCaption: "Khoảnh khắc sinh nhật đáng nhớ",
+    "Chúc mừng sinh nhật Thuffuong! Anh hy vọng tuổi mới sẽ mang đến cho bé thật nhiều niềm vui, sức khỏe và thành công. Anh rất yêu bé và luôn ở đây để ủng hộ bé trên mọi bước đường. Chúc mừng sinh nhật bé iuuuu <3",
+  photoCaption: "Photobooth kỷ niệm sinh nhật Thuffuong 🎉",
   blowThreshold: 0.18,
   blowHoldMs: 200
 };
