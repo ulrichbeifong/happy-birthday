@@ -375,9 +375,9 @@ export default function GiftCatcherGame() {
     <section className="section-card adventure-section">
       <div className="section-heading">
         <div>
-          <h2>Game phiêu lưu nhặt quà</h2>
+          <h2>Vui chơi có thưởng</h2>
           <p>
-            Phiên bản mới có quái vật tuần tra và tấn công. Hãy nhặt quà thật khéo nhé!
+            Hãy nhặt quà thật khéo nhé! Thắng thì có quà, thua cũng có quà, inbox nhatzittt nhé 🎁
           </p>
         </div>
       </div>
