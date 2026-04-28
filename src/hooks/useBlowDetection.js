@@ -53,7 +53,7 @@ export default function useBlowDetection({
     }
 
     const rms = Math.sqrt(sum / buffer.length);
-    const boosted = Math.min(1, rms * 3.2);
+    const boosted = Math.min(1, rms * 5.5);
     setVolume(boosted);
 
     const now = performance.now();
