@@ -1,0 +1,97 @@
+@media (max-width: 960px) {
+  .app-shell {
+    padding: 18px;
+  }
+
+  .site-header {
+    margin-bottom: 20px;
+  }
+
+  .hero-section {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .hero-copy {
+    text-align: center;
+    justify-items: center;
+  }
+
+  .cake-stage {
+    min-height: 540px;
+  }
+
+  .status-line {
+    flex-direction: column;
+    gap: 4px;
+    text-align: left;
+  }
+
+  .photo-grid,
+  .wish-form {
+    grid-template-columns: 1fr;
+  }
+
+  .polaroid-grid,
+  .wish-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .audio-control {
+    left: 16px;
+    bottom: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    align-items: flex-start;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .logo-badge {
+    width: 38px;
+    height: 38px;
+    border-radius: 14px;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .cake-stage {
+    min-height: 470px;
+  }
+
+  .cake-wrap {
+    transform: scale(0.86);
+    transform-origin: center bottom;
+  }
+
+  .camera-preview {
+    right: 12px;
+    bottom: 76px;
+    width: min(180px, 48vw);
+  }
+
+  .polaroid-grid,
+  .wish-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-3d {
+    height: 320px;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .photo-section {
+    scroll-margin-top: 20px;
+  }
+}
