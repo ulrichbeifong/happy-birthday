@@ -12,6 +12,6 @@ export const birthdayConfig = {
   cardMessage:
     "Chúc mừng sinh nhật Thuffuong! Anh hy vọng tuổi mới sẽ mang đến cho bé thật nhiều niềm vui, sức khỏe và thành công. Anh rất yêu bé và luôn ở đây để ủng hộ bé trên mọi bước đường. Chúc mừng sinh nhật bé iuuuu <3",
   photoCaption: "Photobooth kỷ niệm sinh nhật Thuffuong 🎉",
-  blowThreshold: 0.18,
-  blowHoldMs: 200
+  blowThreshold: 0.025,
+  blowHoldMs: 80
 };
