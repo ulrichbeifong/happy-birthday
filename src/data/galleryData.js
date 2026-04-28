@@ -16,7 +16,7 @@ export const galleryData = [
   },
   {
     id: 4,
-    src: "/iimages/gallery-4.jpg",
+    src: "/images/gallery-4.jpg",
     caption: "Oách xà lách vô cùng"
   }
 ];
