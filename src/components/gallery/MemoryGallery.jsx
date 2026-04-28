@@ -5,8 +5,8 @@ export default function MemoryGallery() {
     <section className="section-card">
       <div className="section-heading">
         <div>
-          <h2>Gallery kỷ niệm</h2>
-          <p>Thay ảnh placeholder trong data bằng ảnh thật của bạn.</p>
+          <h2>Hot girl cháy phố</h2>
+          <p>Tuyển tập ảnh xinh gái tinh quái của Thuffuong 🔥</p>
         </div>
       </div>
 
