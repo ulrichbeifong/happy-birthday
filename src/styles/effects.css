@@ -818,3 +818,201 @@
     grid-template-columns: 1fr;
   }
 }
+.survival-layout {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.72fr) minmax(0, 1.28fr);
+  gap: 22px;
+  align-items: stretch;
+}
+
+.survival-map-wrap {
+  width: 100%;
+  min-width: 0;
+}
+
+.survival-map {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  border-radius: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background:
+    radial-gradient(circle at 18% 20%, rgba(255, 209, 102, 0.2), transparent 22%),
+    radial-gradient(circle at 82% 12%, rgba(255, 122, 168, 0.2), transparent 24%),
+    radial-gradient(circle at 70% 78%, rgba(184, 247, 212, 0.18), transparent 28%),
+    linear-gradient(135deg, rgba(95, 55, 122, 0.75), rgba(35, 16, 55, 0.95));
+  box-shadow: inset 0 0 90px rgba(0, 0, 0, 0.22);
+}
+
+.survival-map::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.14) 0 2px, transparent 3px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 70px 70px, 56px 56px, 56px 56px;
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+.survival-player,
+.survival-monster,
+.survival-item,
+.survival-gate {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  user-select: none;
+  line-height: 1;
+  transform: translate(-50%, -50%);
+}
+
+.survival-player {
+  z-index: 6;
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+  filter: drop-shadow(0 14px 18px rgba(0, 0, 0, 0.35));
+  transition: left 0.05s linear, top 0.05s linear, transform 0.12s ease;
+}
+
+.survival-player.hit {
+  animation: playerHit 0.26s linear 2;
+}
+
+.survival-player.attacking {
+  transform: translate(-50%, -50%) scale(1.16);
+}
+
+.survival-monster {
+  z-index: 5;
+  font-size: clamp(1.7rem, 3.4vw, 2.45rem);
+  filter: drop-shadow(0 12px 18px rgba(255, 79, 145, 0.35));
+  transition: left 0.05s linear, top 0.05s linear;
+  animation: monsterPulse 0.9s ease-in-out infinite;
+}
+
+.survival-item {
+  z-index: 4;
+  font-size: clamp(1.4rem, 3vw, 2.1rem);
+  animation: giftBob 1.05s ease-in-out infinite;
+}
+
+.survival-gate {
+  z-index: 4;
+  font-size: clamp(2rem, 4vw, 3rem);
+  width: 58px;
+  height: 58px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 28px rgba(255, 209, 102, 0.14);
+}
+
+.survival-gate.open {
+  background: radial-gradient(circle, rgba(255, 209, 102, 0.32), rgba(255, 122, 168, 0.22));
+  box-shadow: 0 0 36px rgba(255, 209, 102, 0.38);
+  animation: goalOpen 1s ease-in-out infinite;
+}
+
+.attack-ring {
+  position: absolute;
+  inset: -24px;
+  border: 3px solid rgba(255, 209, 102, 0.8);
+  border-radius: 999px;
+  animation: attackRing 0.18s ease-out forwards;
+}
+
+.survival-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 12px;
+  padding: 28px;
+  text-align: center;
+  background: rgba(20, 8, 31, 0.72);
+  backdrop-filter: blur(10px);
+}
+
+.survival-overlay h3,
+.survival-overlay p {
+  margin: 0;
+}
+
+.survival-overlay h3 {
+  font-size: clamp(1.7rem, 4vw, 2.8rem);
+  letter-spacing: -0.05em;
+}
+
+.survival-overlay p {
+  max-width: 440px;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.6;
+}
+
+.survival-controls {
+  width: min(100%, 520px);
+  margin: 22px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@keyframes playerHit {
+  50% {
+    filter: drop-shadow(0 0 20px rgba(255, 0, 72, 0.9));
+    transform: translate(-50%, -50%) scale(1.18);
+  }
+}
+
+@keyframes attackRing {
+  from {
+    opacity: 1;
+    transform: scale(0.4);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(1.35);
+  }
+}
+
+@keyframes monsterPulse {
+  50% {
+    transform: translate(-50%, -50%) scale(1.08) rotate(-2deg);
+  }
+}
+
+@keyframes giftBob {
+  50% {
+    transform: translate(-50%, calc(-50% - 6px));
+  }
+}
+
+@keyframes goalOpen {
+  50% {
+    transform: translate(-50%, -50%) scale(1.08);
+  }
+}
+
+@media (max-width: 960px) {
+  .survival-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .survival-controls {
+    gap: 8px;
+  }
+
+  .survival-controls .btn {
+    padding: 0 10px;
+    font-size: 0.86rem;
+  }
+}
