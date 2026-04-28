@@ -2,21 +2,21 @@ export const galleryData = [
   {
     id: 1,
     src: "",
-    caption: "Khoảnh khắc đáng yêu"
+    caption: "Xinh đẹp tuyệt vời"
   },
   {
     id: 2,
     src: "",
-    caption: "Một ngày thật vui"
+    caption: "Đáng yêu hết phần thiên hạ"
   },
   {
     id: 3,
     src: "",
-    caption: "Kỷ niệm không quên"
+    caption: "Cute phô mai queee"
   },
   {
     id: 4,
     src: "",
-    caption: "Sinh nhật rực rỡ"
+    caption: "Oách xà lách vô cùng"
   }
 ];
