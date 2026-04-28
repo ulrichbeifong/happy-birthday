@@ -9,13 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@vitejs/plugin-react": "latest",
-    "vite": "latest",
+    "canvas-confetti": "latest",
+    "html2canvas": "latest",
+    "lucide-react": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "html2canvas": "latest",
-    "canvas-confetti": "latest",
-    "lucide-react": "latest"
+    "vite": "latest"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.1"
+  }
 }
